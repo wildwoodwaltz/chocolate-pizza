@@ -14,24 +14,24 @@ body header #head {
   margin-right: auto;
 }
 
-body header #left {
+.left {
   display: flex;
   justify-content: left;
   align-items: center;
 }
 
-body header #left div {
+body header .left div {
   display: flex;
   flex-direction: column;
 }
 
-body header #left div p:first-child {
+body header .left div p:first-child {
 font-family: 'Yellowtail', cursive;
 font-size: 36px;
 height: 36px;
 }
 
-body header #left div p:nth-child(2) {
+body header .left div p:nth-child(2) {
   font-family:  sans-serif;
   font-weight: lighter;
   font-size: 6pt;
@@ -41,22 +41,22 @@ body header #left div p:nth-child(2) {
 
 /* header right styling */
 
-body header #right {
+.right {
   display: flex;
   justify-content: right;
   margin-left: auto;
 }
 
-body header #right #social {
+body header .right #social {
   display: flex;
   align-items: center;
 }
 
-body header #right #social img {
+body header .right #social img {
   margin: 1px;
 }
 
-body header #right #share {
+body header .right #share {
   display: flex;
   align-items: center;
   margin-left: 1em;
@@ -69,4 +69,45 @@ body #line {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* main styling */
+
+body main #title {
+  display: flex;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main article {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main article p {
+  text-indent: 3em;
+}
+
+body main #recipe {
+  display: flex;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./img/list-bg.png);
+}
+
+body main #recipe fieldset {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* styling for ingredients */
+
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
 }
