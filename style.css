@@ -1,0 +1,72 @@
+
+/* header left styling */
+body header {
+  display: flex;
+  flex-direction: column;
+}
+
+body header #head {
+  display: flex;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body header #left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+body header #left div {
+  display: flex;
+  flex-direction: column;
+}
+
+body header #left div p:first-child {
+font-family: 'Yellowtail', cursive;
+font-size: 36px;
+height: 36px;
+}
+
+body header #left div p:nth-child(2) {
+  font-family:  sans-serif;
+  font-weight: lighter;
+  font-size: 6pt;
+  margin-left: 5px;
+  color: #555;
+}
+
+/* header right styling */
+
+body header #right {
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+}
+
+body header #right #social {
+  display: flex;
+  align-items: center;
+}
+
+body header #right #social img {
+  margin: 1px;
+}
+
+body header #right #share {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+
+body #line {
+  display: flex;
+  background-image: url(./img/hr-img.png);
+  height: 15px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
