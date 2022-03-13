@@ -116,9 +116,9 @@ body main article {
 body main article p {
   text-indent: 3em;
   line-height: 1.5em;
-  font-size: 13pt;
-  color: grey;
-  font-family:Georgia, 'Times New Roman', Times, serif}
+  font-size: 20px;
+  color: #555;
+  font-family:'Times New Roman', Times, serif}
 
 body main #recipe {
   
@@ -134,8 +134,11 @@ body main #recipe fieldset {
   font-family: 'Patrick Hand', cursive;
   padding: 40px;
   font-size: 18pt;
-  color: grey;
+  color: rgb(97, 81, 60);
   display: inline-block;
+  padding-left: 55px;
+  line-height: 1em;
+  margin-top: -1px
 }
 
 body main #recipe fieldset p{
@@ -153,6 +156,7 @@ opacity: .5;
 
 input[type=checkbox]:checked + label {
   text-decoration: line-through;
+  content: '✔';
 }
 
 body main .linebottom {
@@ -162,10 +166,31 @@ body main .linebottom {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 30;
+  margin-top: 30px;
 }
 
 article p {
   margin-top: 30px;
+}
+
+/*footer styling*/
+footer {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+footer img{
+  display: inline;
+}
+footer div{
+  display: inline;
+  background-color: aqua;
+  height: 50px
+}
+footer div :nth-child(1){
+  display: inline;
+}
+footer div :nth-child(2){
+  float: right;
 }
