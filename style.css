@@ -1,72 +1,74 @@
-
 /* header left styling */
 body header {
-  display: flex;
-  flex-direction: column;
+  
 }
 
 body header #head {
-  display: flex;
+  display: block;
   margin-bottom: 2em;
   margin-top: 2em;
-  width: 960px;
+  width: 900px;
+  padding-top: 1em;
   margin-left: auto;
   margin-right: auto;
 }
 
 .left {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+ float: left;
+}
+body header .left img {
+  padding-top:3px;
+  float: left;
 }
 
 body header .left div {
-  display: flex;
-  flex-direction: column;
+  float: left;
 }
 
 body header .left div p:first-child {
 font-family: 'Yellowtail', cursive;
-font-size: 36px;
-height: 36px;
+vertical-align: text-top;
+font-size: 2.5em;
 }
 
 body header .left div p:nth-child(2) {
   font-family:  sans-serif;
   font-weight: lighter;
-  font-size: 6pt;
+  font-size:.5em;
   margin-left: 5px;
-  color: #555;
+  color: grey;
 }
 
 /* header right styling */
 
 .right {
-  display: flex;
-  justify-content: right;
+  margin-top: 10px;
+  float: right;
   margin-left: auto;
 }
 
 body header .right #social {
-  display: flex;
-  align-items: center;
+  display: inline;
+  float: right;
 }
 
 body header .right #social img {
+  float: right;
   margin: 1px;
 }
 
 body header .right #share {
-  display: flex;
+  float: right;
   align-items: center;
-  margin-left: 1em;
+  margin: 1px;
+  margin-left:.5em;
 }
 
-body #line {
-  display: flex;
+body .line {
   background-image: url(./img/hr-img.png);
   height: 15px;
-  width: 960px;
+  width: 900px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -74,40 +76,96 @@ body #line {
 /* main styling */
 
 body main #title {
-  display: flex;
-  width: 960px;
+  
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+body main #title .left p:nth-child(1) {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 28pt;
+  margin-bottom: 5px;
+}
+
+body main #title .left p:nth-child(2) {
+  color:grey;
+  font-family: sans-serif;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+body main #title .right{
+margin-top: 40px;
+}
+
+body main #title .right p{
+  color: grey;
+  font-family: sans-serif;
+  font-size: 9.1pt;
 }
 
 body main article {
-  display: flex;
-  flex-direction: column;
-  width: 960px;
+  
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
 body main article p {
   text-indent: 3em;
-}
+  line-height: 1.5em;
+  font-size: 13pt;
+  color: grey;
+  font-family:Georgia, 'Times New Roman', Times, serif}
 
 body main #recipe {
-  display: flex;
-  width: 960px;
+  
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(./img/list-bg.png);
+  height: 300px;
+  justify-content: center;
 }
 
 body main #recipe fieldset {
-  display: flex;
-  flex-direction: column;
+  font-family: 'Patrick Hand', cursive;
+  padding: 40px;
+  font-size: 18pt;
+  color: grey;
+  display: inline-block;
+}
 
+body main #recipe fieldset p{
+  margin-bottom: 5px;
+}
+
+body main #recipe fieldset input {
+opacity: .5;
+}
+#lastp {
+  margin-bottom: 20px;
 }
 
 /* styling for ingredients */
 
 input[type=checkbox]:checked + label {
   text-decoration: line-through;
+}
+
+body main .linebottom {
+  
+  background-image: url(./img/hr-img.png);
+  height: 15px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 30;
+}
+
+article p {
+  margin-top: 30px;
 }
